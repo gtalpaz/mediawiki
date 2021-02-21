@@ -83,4 +83,6 @@ RUN set -eux; \
 	\
 	apk del .fetch-deps
 
+RUN git clone --depth 1 https://github.com/HydraWiki/mediawiki-embedvideo.git /var/www/html/extensions/EmbedVideo
+
 CMD ["php-fpm"]
