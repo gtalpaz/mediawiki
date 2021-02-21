@@ -112,5 +112,6 @@ RUN set -eux; \
 	rm -rf /var/lib/apt/lists/*
 
 RUN git clone --depth 1 https://github.com/HydraWiki/mediawiki-embedvideo.git /var/www/html/extensions/EmbedVideo
+RUN git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/PageForms.git /var/www/html/extensions/PageForms
 
 CMD ["apache2-foreground"]
